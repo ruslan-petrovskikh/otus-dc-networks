@@ -8,4 +8,4 @@
 
 1. Схема CLOS:
 
-![My Image](e:\5\HW1_CLOS.png )
+![My Image](HW1_CLOS.png)
