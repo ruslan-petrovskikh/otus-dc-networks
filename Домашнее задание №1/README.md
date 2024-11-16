@@ -24,3 +24,5 @@
 | 10.1.231.0/24             | Резерв для P2P SuperSpine1 - Spines  | 10.1.23x.0/24, где x - номер SuperSpine |
 | 10.1.232.0/24             | Резерв для P2P SuperSpine2 - Spines  | 10.1.23x.0/24, где x - номер SuperSpine |
 | 10.1.233.1 - 10.1.240.254 | Резерв                               |                                         |
+| 10.1.241.0/24             | P2P Spine1 - Leafs                   | 10.1.24x.0/24, где x - номер SuperSpine |
+| 10.1.242.0/24             | P2P Spine2 - Leafs                   | 10.1.24x.0/24, где x - номер SuperSpine |
