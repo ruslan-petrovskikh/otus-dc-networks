@@ -60,7 +60,7 @@
 **Конфигурация устройств:**
 
 * [DC01-L01](DC01-L01.conf)
-* [DC01-L02](DC01-L01.conf)
-* [DC01-L03](DC01-L01.conf)
-* [DC01-S01](DC01-L01.conf)
-* [DC01-S02](DC01-L01.conf)
+* [DC01-L02](DC01-L02.conf)
+* [DC01-L03](DC01-L03.conf)
+* [DC01-S01](DC01-S01.conf)
+* [DC01-S02](DC01-S02.conf)
