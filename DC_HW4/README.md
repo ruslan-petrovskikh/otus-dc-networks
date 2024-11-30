@@ -66,4 +66,4 @@
 
 **Схема сети:**
 
-![hw4_img1](HW4_topology.png)
+![hw4_img1](attach/HW4_topology.png)
