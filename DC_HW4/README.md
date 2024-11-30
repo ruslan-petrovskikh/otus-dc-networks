@@ -75,3 +75,33 @@
 * [DC01-L03](attach/DC01-L03.conf)
 * [DC01-S01](attach/DC01-S01.conf)
 * [DC01-S02](attach/DC01-S02.conf)
+
+3) **Проверка IP-связности между устройствами:**
+
+ - проверка состояния BGP-соседства на DC01-L01, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса других коммутаторов:
+
+    ![hw4_img11](attach/L01_nbr1.png)
+    ![hw4_img12](attach/L01_nbr2.png)
+    ![hw4_img13](attach/L01_db.png)
+    ![hw4_img14](attach/L01_route.png)
+    ![hw4_img15](attach/L01_ping.png)
+
+ - проверка состояния BGP-соседства на DC01-L02, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса других коммутаторов:
+
+    ![hw4_img4](attach/L02_scr1.png)
+    ![hw4_img5](attach/L02_scr2.png)
+ 
+ - проверка состояния BGP-соседства на DC01-L03, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса других коммутаторов:
+
+    ![hw4_img6](attach/L03_scr1.png)
+    ![hw4_img7](attach/L03_scr2.png)
+
+ - проверка состояния BGP-соседства на DC01-S01, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса leaf-коммутаторов:
+
+    ![hw4_img8](attach/S01_scr1.png)
+    ![hw4_img9](attach/S01_scr2.png)
+
+ - проверка состояния BGP-соседства на DC01-S02, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса leaf-коммутаторов:
+
+    ![hw4_img10](attach/S02_scr1.png)
+    ![hw4_img11](attach/S02_scr2.png)
