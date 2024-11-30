@@ -88,9 +88,12 @@
 
  - проверка состояния BGP-соседства на DC01-L02, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса других коммутаторов:
 
-    ![hw4_img4](attach/L02_scr1.png)
-    ![hw4_img5](attach/L02_scr2.png)
- 
+    ![hw4_img21](attach/L02_nbr1.png)
+    ![hw4_img22](attach/L02_nbr2.png)
+    ![hw4_img23](attach/L02_db.png)
+    ![hw4_img24](attach/L02_route.png)
+    ![hw4_img25](attach/L02_ping.png)
+
  - проверка состояния BGP-соседства на DC01-L03, базы данных BGP, таблицы маршрутизации и запуск пинга на loopback-адреса других коммутаторов:
 
     ![hw4_img6](attach/L03_scr1.png)
