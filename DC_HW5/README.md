@@ -81,5 +81,13 @@
 
 **Схема сети:**
 
-![hw5_img1](attach/HW5_topology.png)    
+![hw5_img1](attach/HW5_topology.png)
+
+**Конфигурация устройств:**
+
+* [DC01-L01](attach/DC01-L01.conf)
+* [DC01-L02](attach/DC01-L02.conf)
+* [DC01-L03](attach/DC01-L03.conf)
+* [DC01-S01](attach/DC01-S01.conf)
+* [DC01-S02](attach/DC01-S02.conf)
 
