@@ -82,6 +82,7 @@
 
 ![hw5_img1](attach/HW5_topology.png)
 
+
 **Конфигурация устройств:**
 
 * [DC01-L01](attach/DC01-L01.conf)
@@ -94,34 +95,46 @@
 3) **Проверка состояний коммутаторов:**
 
     - DC01-L01:
+
         ![hw5_img2](attach/L01_bgp_nve.png)
         ![hw5_img3](attach/L01_mac.png)
 
     - DC01-L02:
+
         ![hw5_img4](attach/L02_bgp_nve.png)
         ![hw5_img5](attach/L02_mac.png)
 
     - DC01-L03:
+
         ![hw5_img6](attach/L03_bgp_nve1.png)
         ![hw5_img7](attach/L03_bgp_nve2.png)
         ![hw5_img8](attach/L03_mac.png)
 
     - DC01-S01:
+
         ![hw5_img9](attach/S01_bgp.png)
 
     - DC01-S02:
+
         ![hw5_img10](attach/S02_bgp.png)
+
 
 4) **Проверка L2-связности между устройствами:**
 
  - проверка связности в VNI 5550101:
     *  SRV01:
+
     ![hw4_img11](attach/SRV01_ping.png)
+
     *  SRV03:
+
     ![hw4_img11](attach/SRV03_ping.png)
 
 - проверка связности в VNI 5550102:
     *  SRV02:
+
     ![hw4_img11](attach/SRV02_ping.png)
+
     *  SRV04:
+
     ![hw4_img11](attach/SRV04_ping.png)
