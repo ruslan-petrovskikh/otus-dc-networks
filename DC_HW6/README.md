@@ -109,27 +109,29 @@
 
     - DC01-L01:
 
-        ![hw5_img2](attach/L01_bgp_nve.png)
-        ![hw5_img3](attach/L01_mac.png)
-
+        ![hw5_img2](attach/L01_show1.png)
+        ![hw5_img3](attach/L01_show2.png)
+        ![hw5_img4](attach/L01_show3.png)
+    
     - DC01-L02:
 
-        ![hw5_img4](attach/L02_bgp_nve.png)
-        ![hw5_img5](attach/L02_mac.png)
+        ![hw5_img5](attach/L02_show1.png)
+        ![hw5_img6](attach/L02_show2.png)
+        ![hw5_img7](attach/L02_show3.png)
 
     - DC01-L03:
 
-        ![hw5_img6](attach/L03_bgp_nve1.png)
-        ![hw5_img7](attach/L03_bgp_nve2.png)
-        ![hw5_img8](attach/L03_mac.png)
+        ![hw5_img8](attach/L03_show1.png)
+        ![hw5_img9](attach/L03_show2.png)
+        ![hw5_img10](attach/L03_show3.png)
 
     - DC01-S01:
 
-        ![hw5_img9](attach/S01_bgp.png)
+        ![hw5_img11](attach/S01_show1.png)
 
     - DC01-S02:
 
-        ![hw5_img10](attach/S02_bgp.png)
+        ![hw5_img12](attach/S02_show1.png)
 
 
 4) **Проверка L2-связности между устройствами:**
