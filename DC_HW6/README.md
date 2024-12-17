@@ -134,22 +134,20 @@
         ![hw5_img12](attach/S02_show1.png)
 
 
-4) **Проверка L2-связности между устройствами:**
+4) **Проверка L3-связности между серверами:**
 
- - проверка связности в VNI 5550101:
-    *  SRV01:
+     -  SRV01:
 
-    ![hw4_img11](attach/SRV01_ping.png)
+    ![hw4_img11](attach/SRV01_show1.png)
 
-    *  SRV03:
+    -  SRV02:
 
-    ![hw4_img11](attach/SRV03_ping.png)
+    ![hw4_img11](attach/SRV02_show2.png)
 
-- проверка связности в VNI 5550102:
-    *  SRV02:
+    -  SRV03:
 
-    ![hw4_img11](attach/SRV02_ping.png)
+    ![hw4_img11](attach/SRV03_show3.png)
 
-    *  SRV04:
+    -  SRV04:
 
-    ![hw4_img11](attach/SRV04_ping.png)
+    ![hw4_img11](attach/SRV04_show4.png)
