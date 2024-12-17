@@ -138,16 +138,16 @@
 
      -  SRV01:
 
-    ![hw4_img11](attach/SRV01_show1.png)
+    ![hw4_img13](attach/SRV01_show1.png)
 
     -  SRV02:
 
-    ![hw4_img11](attach/SRV02_show2.png)
+    ![hw4_img14](attach/SRV02_show2.png)
 
     -  SRV03:
 
-    ![hw4_img11](attach/SRV03_show3.png)
+    ![hw4_img15](attach/SRV03_show3.png)
 
     -  SRV04:
 
-    ![hw4_img11](attach/SRV04_show4.png)
+    ![hw4_img16](attach/SRV04_show4.png)
