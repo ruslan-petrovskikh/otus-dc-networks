@@ -156,3 +156,23 @@
         ![hw7_img8](attach/S02_show1.png)
         ![hw7_img9](attach/S02_show2.png)
 
+4) **Проверка L3-связности между серверами:**
+
+     -  SRV01:
+
+    ![hw7_img13](attach/SRV01_show1.png)
+
+    -  SRV02:
+
+    ![hw7_img14](attach/SRV02_show1.png)
+
+    -  SRV03:
+
+    ![hw7_img15](attach/SRV03_show1.png)
+
+    -  SRV04:
+
+    ![hw7_img16](attach/SRV04_show1.png)
+
+5) **Проверка L3-связности между серверами при обрыве линка (выключение интерфейсов происходит на стороне сервера):**
+
