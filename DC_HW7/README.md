@@ -196,8 +196,8 @@
 
         - MAC-таблицы на DC01-L03 и DC01-L04 до и после выключения интерфейса, а также состояние vPC после выключения интерфейса:
 
-    ![hw7_img19](attach/L03_show3.png)
+    
 
-    ![hw7_img19](attach/L04_show3.png)
+    ![hw7_img20](attach/L04_show3.png)
 
     
