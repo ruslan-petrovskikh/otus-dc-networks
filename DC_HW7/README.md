@@ -160,19 +160,19 @@
 
      -  SRV01:
 
-    ![hw7_img13](attach/SRV01_show1.png)
+    ![hw7_img10](attach/SRV01_show1.png)
 
     -  SRV02:
 
-    ![hw7_img14](attach/SRV02_show1.png)
+    ![hw7_img11](attach/SRV02_show1.png)
 
     -  SRV03:
 
-    ![hw7_img15](attach/SRV03_show1.png)
+    ![hw7_img12](attach/SRV03_show1.png)
 
     -  SRV04:
 
-    ![hw7_img16](attach/SRV04_show1.png)
+    ![hw7_img13](attach/SRV04_show1.png)
 
 5) **Проверка L3-связности между серверами при обрыве линка (выключение интерфейсов происходит на стороне сервера):**
 
@@ -180,12 +180,24 @@
  
         - запуск ping'а с DC01-SRV01 на DC01-SRV03 с последующим выключением интерфейса ens3 на DC01-SRV03:
 
-    ![hw7_img17](attach/SRV01-SRV03.png)
+    ![hw7_img14](attach/SRV01-SRV03.png)
 
-    - MAC-таблицы на DC01-L03 и DC01-L04 до и после выключения интерфейса, а также состояние vPC:
+        - MAC-таблицы на DC01-L03 и DC01-L04 до и после выключения интерфейса, а также состояние vPC после выключения интерфейса:
 
-    ![hw7_img16](attach/L03_show2.png)
+    ![hw7_img15](attach/L03_show2.png)
 
-    ![hw7_img17](attach/L04_show2.png)
+    ![hw7_img16](attach/L04_show2.png)
+
+    * DC01-SRV04:
+ 
+        - запуск ping'а с DC01-SRV01 на DC01-SRV04 с последующим выключением интерфейса ens4 на DC01-SRV04:
+
+    ![hw7_img17](attach/SRV01-SRV04.png)
+
+        - MAC-таблицы на DC01-L03 и DC01-L04 до и после выключения интерфейса, а также состояние vPC после выключения интерфейса:
+
+    ![hw7_img19](attach/L03_show3.png)
+
+    ![hw7_img19](attach/L04_show3.png)
 
     
