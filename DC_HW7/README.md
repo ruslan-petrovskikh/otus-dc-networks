@@ -1,4 +1,4 @@
-## **VXLAN. Multihoming.**
+## **VxLAN. Multihoming.**
 
 ### **Цель:**
 

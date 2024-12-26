@@ -150,3 +150,31 @@
 * [DC01-S01](attach/DC01-S01.conf)
 * [DC01-S02](attach/DC01-S02.conf)
 * [DC01-BRD01](attach/DC01-BRD01.conf)
+
+3) **Проверка состояний коммутаторов.**
+
+    - **DC01-L01:**
+
+        ![hw7_img2](attach/L01_show1.png)
+        
+    - **DC01-L02:**
+
+        ![hw7_img3](attach/L02_show1.png)
+        
+    - **DC01-L03:**
+
+        ![hw7_img4](attach/L03_show1.png)
+
+    - **DC01-L04:**
+
+        ![hw7_img5](attach/L04_show1.png)
+    
+    - **DC01-S01:**
+
+        ![hw7_img6](attach/S01_show1.png)
+        ![hw7_img7](attach/S01_show2.png)
+
+    - **DC01-S02:**
+
+        ![hw7_img8](attach/S02_show1.png)
+        ![hw7_img9](attach/S02_show2.png)
