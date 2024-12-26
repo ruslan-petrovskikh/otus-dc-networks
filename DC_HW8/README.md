@@ -151,30 +151,29 @@
 * [DC01-S02](attach/DC01-S02.conf)
 * [DC01-BRD01](attach/DC01-BRD01.conf)
 
-3) **Проверка состояний коммутаторов.**
+3) **Проверка состояний коммутаторов и маршрутизатора.**
 
     - **DC01-L01:**
 
-        ![hw7_img2](attach/L01_show1.png)
+        ![hw8_img2](attach/L01_show1.png)
+        ![hw8_img3](attach/L01_show2.png)
         
     - **DC01-L02:**
 
-        ![hw7_img3](attach/L02_show1.png)
-        
+        ![hw8_img4](attach/L02_show1.png)
+        ![hw8_img5](attach/L02_show2.png)
+
     - **DC01-L03:**
 
-        ![hw7_img4](attach/L03_show1.png)
+        ![hw8_img6](attach/L03_show1.png)
+        ![hw8_img7](attach/L03_show2.png)
 
     - **DC01-L04:**
 
-        ![hw7_img5](attach/L04_show1.png)
+        ![hw8_img8](attach/L04_show1.png)
+        ![hw8_img9](attach/L04_show2.png)
     
-    - **DC01-S01:**
+    - **DC01-BRD01:**
 
-        ![hw7_img6](attach/S01_show1.png)
-        ![hw7_img7](attach/S01_show2.png)
-
-    - **DC01-S02:**
-
-        ![hw7_img8](attach/S02_show1.png)
-        ![hw7_img9](attach/S02_show2.png)
+        ![hw8_img10](attach/BRD01_show1.png)
+      
