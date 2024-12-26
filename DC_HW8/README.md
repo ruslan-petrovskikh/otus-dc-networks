@@ -177,3 +177,14 @@
 
         ![hw8_img10](attach/BRD01_show1.png)
       
+
+4) **Проверка L3-связности между серверами в разных VRF.**
+    
+    -  **SRV01:**
+    
+        ![hw8_img11](attach/SRV01_show1.png)
+    
+    -  **SRV07:**
+    
+        ![hw8_img12](attach/SRV07_show1.png)
+       
