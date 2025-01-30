@@ -31,7 +31,7 @@
         * протокол iBGP (Route Reflector);
         * протокол BFD (из-за ограничений виртуализации сессии BFD не поднимаются).
     
-    - Leafs:
+    - **Leafs:**
         * p2p-адресация;
         * loopback1 интерфейсы;
         * loopback2 интерфейсы;
@@ -46,7 +46,7 @@
         * Anycast Gateway;
         * ESI LAG.
             
-    - Border Leafs (для связи между POD'ами):
+    - **Border Leafs** (для связи между POD'ами):
         * p2p-адресация;
         * loopback1 интерфейсы;
         * loopback2 интерфейсы;
@@ -62,13 +62,13 @@
         * port-channel'ы в сторону пограничных маршрутизаторов;
         * протокол eBGP.
 
-    - Border Routers (для маршрутизации между VRF'ами):
+    - **Border Routers** (для маршрутизации между VRF'ами):
         * p2p-адресация;
         * loopback интерфейс;
         * port-channel'ы в сторону border leaf'ов;
         * протокол eBGP.
 
-    - Servers:
+    - **Servers:**
         * агрегирование сетевых интерфейсов;
         * IP-адрес/маска;
         * шлюз по-умолчанию. 
