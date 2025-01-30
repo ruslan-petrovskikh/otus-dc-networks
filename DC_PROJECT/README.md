@@ -77,6 +77,7 @@
 
 
 <details>
+<summary>Адресация</summary>
 ```
 test
 ```
