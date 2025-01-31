@@ -306,3 +306,7 @@
 |                    |    10.1.52.12     |    DC02-H2-SRV02    |    e0-e1(bond0)    |          -         |       -       |      -      |      -      |
 
 </details>
+
+3) **Топология сети:**
+
+![proj_img1](pictures/Project_topology.png)
