@@ -310,3 +310,16 @@
 3) **Топология сети:**
 
 ![proj_img1](pictures/Project_topology.png)
+
+4) **Конфигурация устройств:**
+
+           **POD1:**
+* [DC01-L01](pictures/DC01-L01.conf)
+* [DC01-L02](pictures/DC01-L02.conf)
+* [DC01-L03](pictures/DC01-L03.conf)
+* [DC01-L04](pictures/DC01-L04.conf)
+* [DC01-BL01](pictures/DC01-BL01.conf)
+* [DC01-BL02](pictures/DC01-BL02.conf)
+* [DC01-S01](pictures/DC01-S01.conf)
+* [DC01-S02](pictures/DC01-S02.conf)
+* [DC01-BRD01](pictures/DC01-BRD01.conf)
