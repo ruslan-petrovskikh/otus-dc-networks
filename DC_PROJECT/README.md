@@ -313,7 +313,7 @@
 
 4) **Конфигурация устройств:**
 
-           **POD1:**
+    **POD1:**
 * [DC01-L01](pictures/DC01-L01.conf)
 * [DC01-L02](pictures/DC01-L02.conf)
 * [DC01-L03](pictures/DC01-L03.conf)
