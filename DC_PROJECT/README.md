@@ -9170,7 +9170,6 @@ DC02-BL01#
 
 ```
 
-</details>
 
 TEST
 
