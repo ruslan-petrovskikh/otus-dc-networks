@@ -3180,8 +3180,13 @@ DC02-BRD01#
 ![proj_img2](pictures/DC01-H1-SRV01_ping1.png)
 ![proj_img3](pictures/DC01-H1-SRV01_ping2.png)
 
-
 -  **DC02-H2-SRV02:**
 
 ![proj_img4](pictures/DC02-H2-SRV02_ping1.png)
 ![proj_img5](pictures/DC02-H2-SRV02_ping2.png)
+
+7) **Выборочная проверка отказоустойчивости.**
+
+-  **DC01-H1-SRV02 (выключение одного из интерфейсов port-channel со стороны коммутатора):**
+
+![proj_img6](pictures/DC01-H1-SRV02_ping1.png)
