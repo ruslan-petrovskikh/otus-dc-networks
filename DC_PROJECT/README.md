@@ -484,3 +484,159 @@ DC01-L01#
 ```
 
 </details>
+
+<details>
+<summary>DC01-L02</summary>
+
+```
+
+DC01-L02# sh isis adjacency
+IS-IS process: 1 VRF: default
+IS-IS adjacency database:
+Legend: '!': No AF level connectivity in given topology
+System ID       SNPA            Level  State  Hold Time  Interface
+DC01-S01        N/A             1      UP     00:00:29   Ethernet1/7
+DC01-S02        N/A             1      UP     00:00:30   Ethernet1/8
+
+DC01-L02# sh bgp l2vpn evpn summary
+BGP summary information for VRF default, address family L2VPN EVPN
+BGP router identifier 10.1.255.2, local AS number 65500
+BGP table version is 2440, L2VPN EVPN config peers 2, capable peers 2
+301 network entries and 582 paths using 83524 bytes of memory
+BGP attribute entries [330/56760], BGP AS path entries [2/20]
+BGP community entries [0/0], BGP clusterlist entries [22/152]
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.253.1      4 65500   49496   48606     2440    0    0    1d16h 183
+10.1.253.2      4 65500   49515   48607     2440    0    0    1d16h 183
+DC01-L02# sh nve peers
+Interface Peer-IP                                 State LearnType Uptime   Router-Mac
+--------- --------------------------------------  ----- --------- -------- -----------------
+nve1      10.1.255.1                              Up    CP        1d16h    5001.0000.1b08
+nve1      10.1.255.3                              Up    CP        1d16h    5003.0000.1b08
+nve1      10.1.255.4                              Up    CP        1d16h    5006.0000.1b08
+nve1      10.1.255.251                            Up    CP        1d16h    500f.0000.1b08
+nve1      10.1.255.252                            Up    CP        1d16h    5010.0000.1b08
+nve1      10.2.255.1                              Up    CP        1d16h    5012.0000.1b08
+nve1      10.2.255.2                              Up    CP        1d16h    5013.0000.1b08
+nve1      10.2.255.3                              Up    CP        1d16h    5014.0000.1b08
+nve1      10.2.255.4                              Up    CP        1d16h    5015.0000.1b08
+nve1      10.2.255.251                            Up    CP        1d16h    5016.0000.1b08
+nve1      10.2.255.252                            Up    CP        1d16h    5017.0000.1b08
+
+DC01-L02# sh l2route mac-ip all
+Flags -(Rmac):Router MAC (Stt):Static (L):Local (R):Remote (V):vPC link
+(Dup):Duplicate (Spl):Split (Rcv):Recv(D):Del Pending (S):Stale (C):Clear
+(Ps):Peer Sync (Ro):Re-Originated (Orp):Orphan
+Topology    Mac Address    Host IP                                 Prod   Flags         Seq No     Next-Hops
+----------- -------------- --------------------------------------- ------ ---------- ---------- ---------------------------------------
+101         6653.2b37.1101 10.1.1.11                               HMM    L,            1         Local
+101         6653.2b37.1201 10.1.1.12                               BGP    --            0         10.2.255.1 (Label: 5550101)
+                                            10.2.255.2 (Label: 5550101)
+102         6653.2b37.1102 10.1.2.11                               HMM    RO,           1         Local
+102         6653.2b37.1102 10.1.2.11                               BGP    PS,           1         10.1.255.1 (Label: 5550102)
+102         6653.2b37.1202 10.1.2.12                               BGP    --            0         10.2.255.1 (Label: 5550102)
+                                            10.2.255.2 (Label: 5550102)
+151         6653.2b37.1103 10.1.51.11                              BGP    --            1         10.1.255.3 (Label: 5550151)
+                                            10.1.255.4 (Label: 5550151)
+151         6653.2b37.1203 10.1.51.12                              BGP    --            0         10.2.255.3 (Label: 5550151)
+                                            10.2.255.4 (Label: 5550151)
+152         6653.2b37.1104 10.1.52.11                              BGP    --            1         10.1.255.3 (Label: 5550152)
+                                            10.1.255.4 (Label: 5550152)
+152         6653.2b37.1204 10.1.52.12                              BGP    --            1         10.2.255.3 (Label: 5550152)
+                                            10.2.255.4 (Label: 5550152)
+DC01-L02# sh ip route vrf CUST1
+IP Route Table for VRF "CUST1"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+10.1.1.0/24, ubest/mbest: 1/0, attached
+    *via 10.1.1.1, Vlan101, [0/0], 1d21h, direct
+10.1.1.1/32, ubest/mbest: 1/0, attached
+    *via 10.1.1.1, Vlan101, [0/0], 1d21h, local
+10.1.1.11/32, ubest/mbest: 1/0, attached
+    *via 10.1.1.11, Vlan101, [190/0], 01:15:54, hmm
+10.1.1.12/32, ubest/mbest: 1/0
+    *via 10.2.255.1%default, [200/0], 01:01:55, bgp-65500, internal, tag 65500, segid: 5550100 tunnelid: 0xa02ff01 encap: VXLAN
+
+10.1.2.0/24, ubest/mbest: 1/0, attached
+    *via 10.1.2.1, Vlan102, [0/0], 1d21h, direct
+10.1.2.1/32, ubest/mbest: 1/0, attached
+    *via 10.1.2.1, Vlan102, [0/0], 1d21h, local
+10.1.2.11/32, ubest/mbest: 1/0, attached
+    *via 10.1.2.11, Vlan102, [190/0], 01:22:39, hmm
+10.1.2.12/32, ubest/mbest: 1/0
+    *via 10.2.255.1%default, [200/0], 00:26:56, bgp-65500, internal, tag 65500, segid: 5550100 tunnelid: 0xa02ff01 encap: VXLAN
+
+10.1.51.0/24, ubest/mbest: 1/0
+    *via 10.1.255.251%default, [200/0], 17:22:18, bgp-65500, internal, tag 65531, segid: 5550100 tunnelid: 0xa01fffb encap: VXLAN
+
+10.1.52.0/24, ubest/mbest: 1/0
+    *via 10.1.255.251%default, [200/0], 17:22:18, bgp-65500, internal, tag 65531, segid: 5550100 tunnelid: 0xa01fffb encap: VXLAN
+
+10.1.230.0/31, ubest/mbest: 1/0
+    *via 10.1.255.251%default, [200/0], 17:22:38, bgp-65500, internal, tag 65500, segid: 5550100 tunnelid: 0xa01fffb encap: VXLAN
+
+10.1.230.4/31, ubest/mbest: 1/0
+    *via 10.1.255.252%default, [200/0], 17:22:38, bgp-65500, internal, tag 65500, segid: 5550100 tunnelid: 0xa01fffc encap: VXLAN
+
+10.2.230.0/31, ubest/mbest: 1/0
+    *via 10.2.255.251%default, [200/0], 1d16h, bgp-65500, internal, tag 65500, segid: 5550100 tunnelid: 0xa02fffb encap: VXLAN
+
+10.2.230.4/31, ubest/mbest: 1/0
+    *via 10.2.255.252%default, [200/0], 09:02:35, bgp-65500, internal, tag 65500, segid: 5550100 tunnelid: 0xa02fffc encap: VXLAN
+
+
+DC01-L02# sh ip route vrf CUST2
+IP Route Table for VRF "CUST2"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+10.1.1.0/24, ubest/mbest: 1/0
+    *via 10.1.255.251%default, [200/0], 17:22:21, bgp-65500, internal, tag 65531, segid: 5550150 tunnelid: 0xa01fffb encap: VXLAN
+
+10.1.2.0/24, ubest/mbest: 1/0
+    *via 10.1.255.251%default, [200/0], 17:22:21, bgp-65500, internal, tag 65531, segid: 5550150 tunnelid: 0xa01fffb encap: VXLAN
+
+10.1.51.0/24, ubest/mbest: 1/0, attached
+    *via 10.1.51.1, Vlan151, [0/0], 1d21h, direct
+10.1.51.1/32, ubest/mbest: 1/0, attached
+    *via 10.1.51.1, Vlan151, [0/0], 1d21h, local
+10.1.51.11/32, ubest/mbest: 1/0
+    *via 10.1.255.3%default, [200/0], 01:20:46, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa01ff03 encap: VXLAN
+
+10.1.51.12/32, ubest/mbest: 1/0
+    *via 10.2.255.3%default, [200/0], 00:22:50, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa02ff03 encap: VXLAN
+
+10.1.52.0/24, ubest/mbest: 1/0, attached
+    *via 10.1.52.1, Vlan152, [0/0], 1d21h, direct
+10.1.52.1/32, ubest/mbest: 1/0, attached
+    *via 10.1.52.1, Vlan152, [0/0], 1d21h, local
+10.1.52.11/32, ubest/mbest: 1/0
+    *via 10.1.255.3%default, [200/0], 01:13:58, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa01ff03 encap: VXLAN
+
+10.1.52.12/32, ubest/mbest: 1/0
+    *via 10.2.255.3%default, [200/0], 00:20:28, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa02ff03 encap: VXLAN
+
+10.1.230.2/31, ubest/mbest: 1/0
+    *via 10.1.255.251%default, [200/0], 17:22:41, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa01fffb encap: VXLAN
+
+10.1.230.6/31, ubest/mbest: 1/0
+    *via 10.1.255.252%default, [200/0], 17:22:41, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa01fffc encap: VXLAN
+
+10.2.230.2/31, ubest/mbest: 1/0
+    *via 10.2.255.251%default, [200/0], 1d16h, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa02fffb encap: VXLAN
+
+10.2.230.6/31, ubest/mbest: 1/0
+    *via 10.2.255.252%default, [200/0], 09:02:38, bgp-65500, internal, tag 65500, segid: 5550150 tunnelid: 0xa02fffc encap: VXLAN
+
+
+DC01-L02#
+
+```
+
+</details>
