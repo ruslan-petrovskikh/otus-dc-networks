@@ -331,7 +331,9 @@
 
 <details>
 <summary>DC01-L01</summary>
+
 ```
+
 DC01-L01# sh isis adjacency
 IS-IS process: 1 VRF: default
 IS-IS adjacency database:
@@ -1523,5 +1525,7 @@ Route Distinguisher: 10.1.255.1:4    (L3VNI 5550150)
 *>i                   10.2.255.3               0        100          0 ?
 
 DC01-L01#
+
 ```
+
 </details>
