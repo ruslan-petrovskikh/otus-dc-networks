@@ -8401,5 +8401,474 @@ DC02-BL02#
 
 </details>
 
+<details>
+<summary>DC02-S01</summary>
+
+```
+
+DC02-S01# sh isis adjacency
+IS-IS process: 1 VRF: default
+IS-IS adjacency database:
+Legend: '!': No AF level connectivity in given topology
+System ID       SNPA            Level  State  Hold Time  Interface
+DC02-L01        N/A             1      UP     00:00:26   Ethernet1/1
+DC02-L02        N/A             1      UP     00:00:23   Ethernet1/2
+DC02-L03        N/A             1      UP     00:00:29   Ethernet1/3
+DC02-L04        N/A             1      UP     00:00:30   Ethernet1/4
+DC02-BL01       N/A             1      UP     00:00:30   Ethernet1/7
+DC02-BL02       N/A             1      UP     00:00:28   Ethernet1/8
+
+DC02-S01# sh ip route
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+10.1.240.0/31, ubest/mbest: 1/0
+    *via 10.2.241.9, Eth1/7, [115/80], 1d17h, isis-1, L1
+10.1.240.2/31, ubest/mbest: 1/0
+    *via 10.2.241.11, Eth1/8, [115/80], 1d17h, isis-1, L1
+10.1.240.4/31, ubest/mbest: 1/0
+    *via 10.2.241.11, Eth1/8, [115/80], 1d17h, isis-1, L1
+10.1.240.6/31, ubest/mbest: 1/0
+    *via 10.2.241.9, Eth1/7, [115/80], 1d17h, isis-1, L1
+10.1.241.0/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.2/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.4/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.6/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.8/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.241.10/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.242.0/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.2/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.4/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.6/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.8/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.242.10/31, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.253.1/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/121], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/121], 1d17h, isis-1, L1
+10.1.253.2/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/121], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/121], 1d17h, isis-1, L1
+10.1.254.1/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.2/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.3/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.4/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.251/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.1.254.252/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.1.255.1/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.2/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.3/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.4/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.251/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.1.255.252/32, ubest/mbest: 2/0
+    *via 10.2.241.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.2.241.0/31, ubest/mbest: 1/0, attached
+    *via 10.2.241.0, Eth1/1, [0/0], 1d17h, direct
+10.2.241.0/32, ubest/mbest: 1/0, attached
+    *via 10.2.241.0, Eth1/1, [0/0], 1d17h, local
+10.2.241.2/31, ubest/mbest: 1/0, attached
+    *via 10.2.241.2, Eth1/2, [0/0], 1d17h, direct
+10.2.241.2/32, ubest/mbest: 1/0, attached
+    *via 10.2.241.2, Eth1/2, [0/0], 1d17h, local
+10.2.241.4/31, ubest/mbest: 1/0, attached
+    *via 10.2.241.4, Eth1/3, [0/0], 1d17h, direct
+10.2.241.4/32, ubest/mbest: 1/0, attached
+    *via 10.2.241.4, Eth1/3, [0/0], 1d17h, local
+10.2.241.6/31, ubest/mbest: 1/0, attached
+    *via 10.2.241.6, Eth1/4, [0/0], 1d17h, direct
+10.2.241.6/32, ubest/mbest: 1/0, attached
+    *via 10.2.241.6, Eth1/4, [0/0], 1d17h, local
+10.2.241.8/31, ubest/mbest: 1/0, attached
+    *via 10.2.241.8, Eth1/7, [0/0], 1d17h, direct
+10.2.241.8/32, ubest/mbest: 1/0, attached
+    *via 10.2.241.8, Eth1/7, [0/0], 1d17h, local
+10.2.241.10/31, ubest/mbest: 1/0, attached
+    *via 10.2.241.10, Eth1/8, [0/0], 1d17h, direct
+10.2.241.10/32, ubest/mbest: 1/0, attached
+    *via 10.2.241.10, Eth1/8, [0/0], 1d17h, local
+10.2.242.0/31, ubest/mbest: 1/0
+    *via 10.2.241.1, Eth1/1, [115/80], 1d17h, isis-1, L1
+10.2.242.2/31, ubest/mbest: 1/0
+    *via 10.2.241.3, Eth1/2, [115/80], 1d17h, isis-1, L1
+10.2.242.4/31, ubest/mbest: 1/0
+    *via 10.2.241.5, Eth1/3, [115/80], 1d17h, isis-1, L1
+10.2.242.6/31, ubest/mbest: 1/0
+    *via 10.2.241.7, Eth1/4, [115/80], 1d17h, isis-1, L1
+10.2.242.8/31, ubest/mbest: 1/0
+    *via 10.2.241.9, Eth1/7, [115/80], 1d17h, isis-1, L1
+10.2.242.10/31, ubest/mbest: 1/0
+    *via 10.2.241.11, Eth1/8, [115/80], 1d17h, isis-1, L1
+10.2.253.1/32, ubest/mbest: 2/0, attached
+    *via 10.2.253.1, Lo1, [0/0], 1d22h, local
+    *via 10.2.253.1, Lo1, [0/0], 1d22h, direct
+10.2.253.2/32, ubest/mbest: 6/0
+    *via 10.2.241.1, Eth1/1, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.3, Eth1/2, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.5, Eth1/3, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.7, Eth1/4, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.241.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.2.254.1/32, ubest/mbest: 1/0
+    *via 10.2.241.1, Eth1/1, [115/41], 1d17h, isis-1, L1
+10.2.254.2/32, ubest/mbest: 1/0
+    *via 10.2.241.3, Eth1/2, [115/41], 1d17h, isis-1, L1
+10.2.254.3/32, ubest/mbest: 1/0
+    *via 10.2.241.5, Eth1/3, [115/41], 1d17h, isis-1, L1
+10.2.254.4/32, ubest/mbest: 1/0
+    *via 10.2.241.7, Eth1/4, [115/41], 1d17h, isis-1, L1
+10.2.254.251/32, ubest/mbest: 1/0
+    *via 10.2.241.9, Eth1/7, [115/41], 1d17h, isis-1, L1
+10.2.254.252/32, ubest/mbest: 1/0
+    *via 10.2.241.11, Eth1/8, [115/41], 1d17h, isis-1, L1
+10.2.255.1/32, ubest/mbest: 1/0
+    *via 10.2.241.1, Eth1/1, [115/41], 1d17h, isis-1, L1
+10.2.255.2/32, ubest/mbest: 1/0
+    *via 10.2.241.3, Eth1/2, [115/41], 1d17h, isis-1, L1
+10.2.255.3/32, ubest/mbest: 1/0
+    *via 10.2.241.5, Eth1/3, [115/41], 1d17h, isis-1, L1
+10.2.255.4/32, ubest/mbest: 1/0
+    *via 10.2.241.7, Eth1/4, [115/41], 1d17h, isis-1, L1
+10.2.255.251/32, ubest/mbest: 1/0
+    *via 10.2.241.9, Eth1/7, [115/41], 1d17h, isis-1, L1
+10.2.255.252/32, ubest/mbest: 1/0
+    *via 10.2.241.11, Eth1/8, [115/41], 1d17h, isis-1, L1
+
+DC02-S01# sh bgp l2vpn evpn summary
+BGP summary information for VRF default, address family L2VPN EVPN
+BGP router identifier 10.2.253.1, local AS number 65500
+BGP table version is 3708, L2VPN EVPN config peers 9, capable peers 8
+213 network entries and 615 paths using 100212 bytes of memory
+BGP attribute entries [387/66564], BGP AS path entries [2/20]
+BGP community entries [0/0], BGP clusterlist entries [28/192]
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.255.251    4 65500   50119   49609     3708    0    0    1d17h 134
+10.1.255.252    4 65500   50182   49599     3708    0    0    1d17h 134
+10.2.255.1      4 65500   49504   49500     3708    0    0    1d17h 20
+10.2.255.2      4 65500   49504   49487     3708    0    0    1d17h 19
+10.2.255.3      4 65500   49481   49483     3708    0    0    1d17h 20
+10.2.255.4      4 65500   55843   55841     3708    0    0    1d17h 20
+10.2.255.251    4 65500   56428   55820     3708    0    0    1d17h 134
+10.2.255.252    4 65500   56466   55826     3708    0    0    1d17h 134
+
+DC02-S01#
+
+```
+
+</details>
+
+<details>
+<summary>DC02-S02</summary>
+
+```
+
+DC02-S02# sh isis adjacency
+IS-IS process: 1 VRF: default
+IS-IS adjacency database:
+Legend: '!': No AF level connectivity in given topology
+System ID       SNPA            Level  State  Hold Time  Interface
+DC02-L01        N/A             1      UP     00:00:25   Ethernet1/1
+DC02-L02        N/A             1      UP     00:00:29   Ethernet1/2
+DC02-L03        N/A             1      UP     00:00:26   Ethernet1/3
+DC02-L04        N/A             1      UP     00:00:32   Ethernet1/4
+DC02-BL01       N/A             1      UP     00:00:24   Ethernet1/7
+DC02-BL02       N/A             1      UP     00:00:29   Ethernet1/8
+
+DC02-S02# sh ip route
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+10.1.240.0/31, ubest/mbest: 1/0
+    *via 10.2.242.9, Eth1/7, [115/80], 1d17h, isis-1, L1
+10.1.240.2/31, ubest/mbest: 1/0
+    *via 10.2.242.11, Eth1/8, [115/80], 1d17h, isis-1, L1
+10.1.240.4/31, ubest/mbest: 1/0
+    *via 10.2.242.11, Eth1/8, [115/80], 1d17h, isis-1, L1
+10.1.240.6/31, ubest/mbest: 1/0
+    *via 10.2.242.9, Eth1/7, [115/80], 1d17h, isis-1, L1
+10.1.241.0/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.2/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.4/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.6/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.241.8/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.241.10/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.242.0/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.2/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.4/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.6/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/160], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/160], 1d17h, isis-1, L1
+10.1.242.8/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.242.10/31, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/120], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/120], 1d17h, isis-1, L1
+10.1.253.1/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/121], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/121], 1d17h, isis-1, L1
+10.1.253.2/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/121], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/121], 1d17h, isis-1, L1
+10.1.254.1/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.2/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.3/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.4/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.254.251/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.1.254.252/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.1.255.1/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.2/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.3/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.4/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/161], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/161], 1d17h, isis-1, L1
+10.1.255.251/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.1.255.252/32, ubest/mbest: 2/0
+    *via 10.2.242.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.2.241.0/31, ubest/mbest: 1/0
+    *via 10.2.242.1, Eth1/1, [115/80], 1d17h, isis-1, L1
+10.2.241.2/31, ubest/mbest: 1/0
+    *via 10.2.242.3, Eth1/2, [115/80], 1d17h, isis-1, L1
+10.2.241.4/31, ubest/mbest: 1/0
+    *via 10.2.242.5, Eth1/3, [115/80], 1d17h, isis-1, L1
+10.2.241.6/31, ubest/mbest: 1/0
+    *via 10.2.242.7, Eth1/4, [115/80], 1d22h, isis-1, L1
+10.2.241.8/31, ubest/mbest: 1/0
+    *via 10.2.242.9, Eth1/7, [115/80], 1d17h, isis-1, L1
+10.2.241.10/31, ubest/mbest: 1/0
+    *via 10.2.242.11, Eth1/8, [115/80], 1d17h, isis-1, L1
+10.2.242.0/31, ubest/mbest: 1/0, attached
+    *via 10.2.242.0, Eth1/1, [0/0], 1d22h, direct
+10.2.242.0/32, ubest/mbest: 1/0, attached
+    *via 10.2.242.0, Eth1/1, [0/0], 1d22h, local
+10.2.242.2/31, ubest/mbest: 1/0, attached
+    *via 10.2.242.2, Eth1/2, [0/0], 1d22h, direct
+10.2.242.2/32, ubest/mbest: 1/0, attached
+    *via 10.2.242.2, Eth1/2, [0/0], 1d22h, local
+10.2.242.4/31, ubest/mbest: 1/0, attached
+    *via 10.2.242.4, Eth1/3, [0/0], 1d22h, direct
+10.2.242.4/32, ubest/mbest: 1/0, attached
+    *via 10.2.242.4, Eth1/3, [0/0], 1d22h, local
+10.2.242.6/31, ubest/mbest: 1/0, attached
+    *via 10.2.242.6, Eth1/4, [0/0], 1d22h, direct
+10.2.242.6/32, ubest/mbest: 1/0, attached
+    *via 10.2.242.6, Eth1/4, [0/0], 1d22h, local
+10.2.242.8/31, ubest/mbest: 1/0, attached
+    *via 10.2.242.8, Eth1/7, [0/0], 1d22h, direct
+10.2.242.8/32, ubest/mbest: 1/0, attached
+    *via 10.2.242.8, Eth1/7, [0/0], 1d22h, local
+10.2.242.10/31, ubest/mbest: 1/0, attached
+    *via 10.2.242.10, Eth1/8, [0/0], 1d22h, direct
+10.2.242.10/32, ubest/mbest: 1/0, attached
+    *via 10.2.242.10, Eth1/8, [0/0], 1d22h, local
+10.2.253.1/32, ubest/mbest: 6/0
+    *via 10.2.242.1, Eth1/1, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.3, Eth1/2, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.5, Eth1/3, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.7, Eth1/4, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.9, Eth1/7, [115/81], 1d17h, isis-1, L1
+    *via 10.2.242.11, Eth1/8, [115/81], 1d17h, isis-1, L1
+10.2.253.2/32, ubest/mbest: 2/0, attached
+    *via 10.2.253.2, Lo1, [0/0], 1d22h, local
+    *via 10.2.253.2, Lo1, [0/0], 1d22h, direct
+10.2.254.1/32, ubest/mbest: 1/0
+    *via 10.2.242.1, Eth1/1, [115/41], 1d17h, isis-1, L1
+10.2.254.2/32, ubest/mbest: 1/0
+    *via 10.2.242.3, Eth1/2, [115/41], 1d17h, isis-1, L1
+10.2.254.3/32, ubest/mbest: 1/0
+    *via 10.2.242.5, Eth1/3, [115/41], 1d17h, isis-1, L1
+10.2.254.4/32, ubest/mbest: 1/0
+    *via 10.2.242.7, Eth1/4, [115/41], 1d22h, isis-1, L1
+10.2.254.251/32, ubest/mbest: 1/0
+    *via 10.2.242.9, Eth1/7, [115/41], 1d17h, isis-1, L1
+10.2.254.252/32, ubest/mbest: 1/0
+    *via 10.2.242.11, Eth1/8, [115/41], 1d17h, isis-1, L1
+10.2.255.1/32, ubest/mbest: 1/0
+    *via 10.2.242.1, Eth1/1, [115/41], 1d17h, isis-1, L1
+10.2.255.2/32, ubest/mbest: 1/0
+    *via 10.2.242.3, Eth1/2, [115/41], 1d17h, isis-1, L1
+10.2.255.3/32, ubest/mbest: 1/0
+    *via 10.2.242.5, Eth1/3, [115/41], 1d17h, isis-1, L1
+10.2.255.4/32, ubest/mbest: 1/0
+    *via 10.2.242.7, Eth1/4, [115/41], 1d22h, isis-1, L1
+10.2.255.251/32, ubest/mbest: 1/0
+    *via 10.2.242.9, Eth1/7, [115/41], 1d17h, isis-1, L1
+10.2.255.252/32, ubest/mbest: 1/0
+    *via 10.2.242.11, Eth1/8, [115/41], 1d17h, isis-1, L1
+
+DC02-S02# sh bgp l2vpn evpn summary
+BGP summary information for VRF default, address family L2VPN EVPN
+BGP router identifier 10.2.253.2, local AS number 65500
+BGP table version is 3296, L2VPN EVPN config peers 9, capable peers 8
+213 network entries and 931 paths using 138132 bytes of memory
+BGP attribute entries [583/100276], BGP AS path entries [2/20]
+BGP community entries [0/0], BGP clusterlist entries [44/320]
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.255.251    4 65500   50225   49710     3296    0    0    1d17h 213
+10.1.255.252    4 65500   50265   49700     3296    0    0    1d17h 213
+10.2.255.1      4 65500   49594   49597     3296    0    0    1d17h 20
+10.2.255.2      4 65500   49598   49587     3296    0    0    1d17h 19
+10.2.255.3      4 65500   49571   49575     3296    0    0    1d17h 20
+10.2.255.4      4 65500   55932   55923     3296    0    0    1d22h 20
+10.2.255.251    4 65500   56512   55920     3296    0    0    1d17h 213
+10.2.255.252    4 65500   56564   55923     3296    0    0    1d22h 213
+
+```
+
+</details>
+
+<details>
+<summary>DC02-BRD01</summary>
+
+```
+
+DC02-BRD01#sh ip bgp summary
+BGP router identifier 10.2.251.1, local AS number 65532
+BGP table version is 33, main routing table version 33
+4 network entries using 992 bytes of memory
+8 path entries using 1088 bytes of memory
+4 multipath network entries and 8 multipath paths
+1/1 BGP path/bestpath attribute entries using 280 bytes of memory
+1 BGP AS-PATH entries using 24 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 2384 total bytes of memory
+BGP activity 4/0 prefixes, 20/12 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.2.230.1      4        65500   49673   48613       33    0    0 1d17h           2
+10.2.230.3      4        65500   49672   48609       33    0    0 1d17h           2
+10.2.230.5      4        65500   12034   11776       33    0    0 10:02:39        2
+10.2.230.7      4        65500   12034   11776       33    0    0 10:02:40        2
+DC02-BRD01#sh ip ro
+DC02-BRD01#sh ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 13 subnets, 3 masks
+B        10.1.1.0/24 [20/0] via 10.2.230.5, 10:02:43
+                     [20/0] via 10.2.230.1, 10:02:43
+B        10.1.2.0/24 [20/0] via 10.2.230.5, 10:02:43
+                     [20/0] via 10.2.230.1, 10:02:43
+B        10.1.51.0/24 [20/0] via 10.2.230.7, 10:02:44
+                      [20/0] via 10.2.230.3, 10:02:44
+B        10.1.52.0/24 [20/0] via 10.2.230.7, 10:02:44
+                      [20/0] via 10.2.230.3, 10:02:44
+C        10.2.230.0/31 is directly connected, Port-channel1.3005
+L        10.2.230.0/32 is directly connected, Port-channel1.3005
+C        10.2.230.2/31 is directly connected, Port-channel1.3006
+L        10.2.230.2/32 is directly connected, Port-channel1.3006
+C        10.2.230.4/31 is directly connected, Port-channel2.3007
+L        10.2.230.4/32 is directly connected, Port-channel2.3007
+C        10.2.230.6/31 is directly connected, Port-channel2.3008
+L        10.2.230.6/32 is directly connected, Port-channel2.3008
+C        10.2.251.1/32 is directly connected, Loopback0
+DC02-BRD01#
+
+```
+
+</details>
+
 
 
