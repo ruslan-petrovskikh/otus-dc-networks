@@ -6916,6 +6916,58 @@ DC01-S02#
 
 ```
 
+DC01-BRD01#sh ip bgp summary
+BGP router identifier 10.1.251.1, local AS number 65531
+BGP table version is 5, main routing table version 5
+4 network entries using 992 bytes of memory
+8 path entries using 1088 bytes of memory
+4 multipath network entries and 8 multipath paths
+1/1 BGP path/bestpath attribute entries using 280 bytes of memory
+1 BGP AS-PATH entries using 24 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 2384 total bytes of memory
+BGP activity 4/0 prefixes, 16/8 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.230.1      4        65500   21411   20951        5    0    0 17:52:31        2
+10.1.230.3      4        65500   21408   20948        5    0    0 17:52:21        2
+10.1.230.5      4        65500   21405   20947        5    0    0 17:52:16        2
+10.1.230.7      4        65500   21410   20951        5    0    0 17:52:31        2
+DC01-BRD01#sh ip ro
+DC01-BRD01#sh ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 13 subnets, 3 masks
+B        10.1.1.0/24 [20/0] via 10.1.230.5, 17:52:20
+                     [20/0] via 10.1.230.1, 17:52:20
+B        10.1.2.0/24 [20/0] via 10.1.230.5, 17:52:20
+                     [20/0] via 10.1.230.1, 17:52:20
+B        10.1.51.0/24 [20/0] via 10.1.230.7, 17:52:20
+                      [20/0] via 10.1.230.3, 17:52:20
+B        10.1.52.0/24 [20/0] via 10.1.230.7, 17:52:20
+                      [20/0] via 10.1.230.3, 17:52:20
+C        10.1.230.0/31 is directly connected, Port-channel1.3001
+L        10.1.230.0/32 is directly connected, Port-channel1.3001
+C        10.1.230.2/31 is directly connected, Port-channel1.3002
+L        10.1.230.2/32 is directly connected, Port-channel1.3002
+C        10.1.230.4/31 is directly connected, Port-channel2.3003
+L        10.1.230.4/32 is directly connected, Port-channel2.3003
+C        10.1.230.6/31 is directly connected, Port-channel2.3004
+L        10.1.230.6/32 is directly connected, Port-channel2.3004
+C        10.1.251.1/32 is directly connected, Loopback0
+DC01-BRD01#
+
 ```
 
 </details>
