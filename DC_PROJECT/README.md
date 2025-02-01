@@ -796,6 +796,8 @@ DC01-L03#
 ```
 
 </details>
+
+<details>
 <summary>DC01-L04</summary>
 
 ```
@@ -951,6 +953,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC01-BL01</summary>
 
 ```
@@ -959,6 +962,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC01-BL02</summary>
 
 ```
@@ -967,6 +971,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC01-S01</summary>
 
 ```
@@ -975,6 +980,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC01-S02</summary>
 
 ```
@@ -983,6 +989,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC01-BRD01</summary>
 
 ```
@@ -1004,6 +1011,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-L02</summary>
 
 ```
@@ -1022,6 +1030,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-L04</summary>
 
 ```
@@ -1030,6 +1039,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-BL01</summary>
 
 ```
@@ -1038,6 +1048,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-BL02</summary>
 
 ```
@@ -1046,6 +1057,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-S01</summary>
 
 ```
@@ -1054,6 +1066,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-S02</summary>
 
 ```
@@ -1062,6 +1075,7 @@ DC01-L04#
 
 </details>
 
+<details>
 <summary>DC02-BRD01</summary>
 
 ```
