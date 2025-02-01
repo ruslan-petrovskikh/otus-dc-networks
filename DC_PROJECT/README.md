@@ -9179,7 +9179,7 @@ DC02-BL01#
 ```
 
 DC02-BL02# sh isis adjacency
-ll
+
 sh ip route vrf CUST1IS-IS process: 1 VRF: default
 IS-IS adjacency database:
 Legend: '!': No AF level connectivity in given topology
